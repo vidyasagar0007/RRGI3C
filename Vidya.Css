@@ -1,0 +1,13 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 400px;
+    background-image: url('https://images.wallpapersden.com/image/wxl-4k-beautiful-landscape-digital-art_73919.jpg');
+    background-size:cover;
+    /* background-repeat: no-repeat; */
+}
+h1{
+    color: red;
+}

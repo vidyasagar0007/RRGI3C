@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #main{
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+    }
+    .grid-box{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap:10px;
+    }
+    .subgrid-box{
+        background-color: red;
+        height: 200px;
+        background-image: url('https://images.wallpapersden.com/image/wxl-4k-beautiful-landscape-digital-art_73919.jpg');
+    }
+    h1{
+        color: green;
+        font-size: 50px;
+    }
+    @media (max-width:400px) {
+        .grid-box{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap:10px;
+    }
+        h1{
+        color: rgb(0, 217, 255);
+        font-size: 20px;
+    }
+        
+    }
+        @media (min-width:401px) {
+        .grid-box{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:10px;
+    }
+        h1{
+        color: rgb(34, 0, 255);
+        font-size: 30px;
+    }
+        
+    }
+        @media (min-width:1000px) {
+        .grid-box{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap:10px;
+    }
+        h1{
+        color: rgb(212, 6, 6);
+        font-size: 40px;
+    }
+        
+    }
+
+</style>
+<body>
+    <div id="main">
+        <h1>Grid</h1>
+        <div class="grid-box">
+            <div class="subgrid-box">vidya</div>
+            <div class="subgrid-box">vidya</div>
+            <div class="subgrid-box">vidya</div>
+            <div class="subgrid-box">vidya</div>
+            <div class="subgrid-box">vidya</div>
+            <div class="subgrid-box">vidya</div>
+            <div class="subgrid-box">vidya</div>
+            <div class="subgrid-box">vidya</div>
+            <div class="subgrid-box">vidya</div>
+        </div>
+    </div>
+</body>
+</html>

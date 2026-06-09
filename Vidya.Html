@@ -1,19 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Sign Up Form</h1>
-    <form action="">
-        <label for="">Name:</label>
-        <input type="text" name="" id=""><br><br>
-        <label for="">Email:</label>
-        <input type="email" name="" id="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="./Vidya.Css">
+  </head>
+  <body>
+      <div id="main">
+          <h1>Sign Up Form</h1>
+          <form action="#" method="get" id="masterForm">
+              <label for="fullName">Name:</label>
+      <input
+        type="text"
+        name="fullName"
+        id="fullName"
+        placeholder="Enter Your Name"
+      /><br /><br />
+      <label for="emailAddress">Email:</label>
+      <input
+      type="email"
+        name="emailAddress"
+        id="emailAddress"
+        placeholder="Enter Your email"
+        required
+        /><br /><br />
+        <label for="userPassword">Password:</label>
+        <input
+        type="password"
+        name="userPassword"
+        id="userPassword"
+        placeholder="Enter You password"
+        /><br /><br />
+        <label for="phoneNumber">Phone:</label>
+      <input
+        type="tel"
+        name="phoneNumber"
+        id="phoneNumber"
+        placeholder="Enter"
+        /><br /><br />
+        <label for="birthDate">Birth Date:</label>
+        <input type="date" name="birthDate" id="birthDate" /><br /><br />
+      <label>Gender:</label>
+      <input type="radio" name="gender" id="genderMale" value="male" />
+      <label for="genderMale">Male</label>
+      <input type="radio" name="gender" id="genderFemale" value="female" />
+      <label for="genderFemale">Female</label>
+      <input type="radio" name="gender" id="genderOther" value="other" />
+      <label for="genderOther">Other</label>
+      <br /><br />
+      <label for="countrySelect">Country:</label>
+      <select name="country" id="countrySelect">
+          <option value="">-- Select Country --</option>
+          <option value="US">United States</option>
+          <option value="UK">United Kingdom</option>
+          <option value="Canada">Canada</option>
+          <option value="Australia">Australia</option>
+          <option value="India">India</option></select
+          ><br /><br />
+          <label for="bio">Bio:</label>
+          <textarea
+          name="bio"
+          id="bio"
+          rows="3"
+          cols="40"
+            placeholder="Tell us about yourself..."
+            ></textarea>        
+            <br /><br />
+      <button type="button">Submit</button>
     </form>
-    
-
+</div>
 </body>
 </html>
