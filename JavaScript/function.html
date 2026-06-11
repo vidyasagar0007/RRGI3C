@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       // function message() {
+       //     alert("hello sir How are you");
+       // }
+
+        // ===================================this is my onclick method here============================
+
+       // const buttonclick = () => {
+       //     document.getElementById("Vidya").innerHTML = " Time is :" + new Date() ;
+       // }
+
+
+        // ========================take the value form the user =============================================================
+
+ //       const printname = ()=>{
+//            const myname = String(document.getElementById("myname1").value)
+//            document.getElementById("myname").innerHTML= myname
+//        }
+
+//==================================== Add the number take from user inputs ====================
+            const addNumbers = ()=>{
+            var num1 = parseFloat(document.getElementById("num1").value)
+            var num2 = parseFloat(document.getElementById("num2").value)
+            var result = num1 + num2
+            document.getElementById("add").innerHTML = "Addition: " + result
+            var mul = num1 * num2
+            document.getElementById("Mul").innerHTML = "Multiplication: " + mul
+            var sub = num1 - num2
+            document.getElementById("Sub").innerHTML = "Subtraction: " + sub
+            var div = num1 / num2
+            document.getElementById("Div").innerHTML = "Division: " + div
+        } 
+
+    </script>
+</head>
+
+<body>
+    
+<!-- ==================================== Add the number take from user inputs ==================== -->
+
+      <input type="number" name="" id="num1">
+      <input type="number" name="" id="num2">
+      <button  onclick="addNumbers()" type="button">Result</button>
+      <p id="add"></p>
+      <p id="Mul"></p>
+      <p id="Sub"></p>
+      <p id="Div"></p>
+
+
+
+     <!--========================== this is print name ================================-->
+      <!-- <input type="text" name="" id="myname1">
+      <button  onclick="printname()" type="button">Add name</button>
+      <p id="myname"></p> -->
+
+
+    <!-- <button onclick=message() type="Button">Click Here </button> -->
+    <!-- show the date and time here  -->
+    <!-- <button onclick="buttonclick()">Date and Time</button> -->
+    <!-- <p id="Vidya"></p> -->
+
+    <!-- <center> <button type="button"></button></center> -->
+
+    
+</body>
+
+</html>
