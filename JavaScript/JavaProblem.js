@@ -33,13 +33,6 @@
 //     console.log("Product is not find")
 // }
 
-//===============Add the any number ===================
-
-// let sum=0
-// for (let i=1; i <= 10; i++) {
-//     sum=sum+2
-// }
-// console.log(sum)
 
 //=============factorial here======================
 

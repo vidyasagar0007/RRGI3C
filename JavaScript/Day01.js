@@ -41,12 +41,34 @@
 
 //=======================//Admin|| HR || User  Role here ==========================
 
-const role = "Admin";
+// const role = "Admin";
 
-if (role === "Admin") {
-  console.log(" Welcome " + role);
-} else if (role === "HR") {
-  console.log(" Welcome " + role);
-} else {
-  console.log("Please Register");
+// if (role === "Admin") {
+//   console.log(" Welcome " + role);
+// } else if (role === "HR") {
+//   console.log(" Welcome " + role);
+// } else {
+//   console.log("Please Register");
+// }
+
+
+//=====================================================
+//==================for loop here=======================
+//======================================================
+
+// Add the any number
+// let sum=0
+// for (let i=1; i <= 10; i++) {
+//     sum=sum+2
+// }
+// console.log(sum)
+
+//=======================================================
+//================while loop here========================
+//========================================================
+
+let i=0
+while(i<=40){
+    console.log(i)
+    i++
 }
