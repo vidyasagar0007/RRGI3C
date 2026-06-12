@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- link js file -->
+     link rel="stylesheet" href="/JavaScript/Async.js">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const todos =()=>{
+
+            const list =String(document.getElementById("list").value)
+            if(list === ""){
+                alert("Please Enter a value !")
+            }else{
+                const li = document.createElement("li")
+                li.innerHTML=`
+                <span>${list}</span>
+                <button onclick="deleteThis(this)">Delete</button>
+                <button onclick="update(this)">Update</button>`
+                document.getElementById("datalist").appendChild(li)
+            }
+        }
+            function deleteThis(btn){
+                btn.parentElement.remove()
+            }
+
+            function update(btn){
+                let newValue = prompt("Enter new value")
+                btn.parentElement.querySelector("span").innerHTML = newValue
+            }
+        
+    </script>
+</head>
+<style>
+    .card{
+        width: 400px;
+        height: 400px;
+        background-color: #f1f1f1;
+        margin: auto;
+        margin-top: 100px;
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border: 1px solid #ccc;
+    }
+    input{
+        width: 200px;
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+        padding: 5px;
+        border: 1px solid #ccc;
+    }
+    button{
+        width: 80px;
+        height: 30px;
+        border-radius: 5px;
+        background-color: #4CAF50;
+        color: white;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div class="card">
+        <h1>Todo List</h1>
+        <br>
+        <input type="text" name="" id="list">
+        <br> 
+        <br>
+        <button class="btn" onclick="todos()">Add</button>
+        <ul id="datalist"></ul>
+    </div>
+</body>
+</html>
