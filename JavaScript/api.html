@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    const fetchData =()=>{
+    const res = fetch('https://jsonplaceholder.typicode.com/users')
+    .then(res=> res.json())
+    .then((data)=>{data.forEach((user)=>{
+        const li = document.createElement("li")
+        li.innerHTML = user.name +"-"+user.email
+        document.getElementById("list").appendChild(li)
+    })}
+    )
+    .catch((error)=>console.log(error))
+}
+//fetchData()
+</script>
+</head>
+<style>
+    .card{
+        width: 400px;
+        height: auto;
+        background-color: #f2f2f2;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        border: 1px solid #ccc;
+    }
+    h1{
+        text-align: center;
+        color: #333;
+    }
+    button{
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        border: 1px solid #4CAF50;
+    }
+</style>
+<body>
+    <!-- processing data from API -->
+<div class="card">
+         <h1>API DATA</h1>
+    <button onclick="fetchData()">Fetch Data</button>
+     <ol id="list"></ol>
+</div>
+    
+</body>
+</html>

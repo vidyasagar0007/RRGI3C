@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 
 const Prev = () => {
     const [count, setCount] =useState(0);
-    const prevCount= useRef(0);
+    const prevCount= useRef();
 
     useEffect(() => {
         prevCount.current = count;

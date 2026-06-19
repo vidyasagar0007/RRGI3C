@@ -1,3 +1,4 @@
+import { BrowserRouter , Route,Routes } from "react-router-dom"
 // import UseState  from "./Hooks/UseState";
 // import Password from "./Hooks/Password";
 // import Usestate from "./Hooks/UseState";
@@ -7,7 +8,10 @@
 // import Form  from "./Hooks/Form";
 // import UseEffect from "./Hooks/UseEffect";
 
-import Prev from "./Hooks/Prev"
+// import Prev from "./Hooks/Prev"
+
+import BackgroundChange from "./Hooks/BackgroundChange";
+
 
 const App = () => {
   return (
@@ -23,7 +27,16 @@ const App = () => {
       {/* <UseEffect/> */}
       {/* <Useref/> */}
       {/* <Usereftimer/> */}
-      <Prev/>
+      {/* <Prev/> */}
+      {/* <Home/> */}
+    
+    <BrowserRouter>
+    <Routes>
+      {/* <Route path="/signup" element={<Form/>}/> */}
+      
+      <Route path="/bgchange" element={<BackgroundChange/>}/>
+    </Routes>
+    </BrowserRouter>
     </div>
   )
 }

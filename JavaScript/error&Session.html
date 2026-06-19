@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // console.log(1)
+// console.log(2)
+/// throw new Error("Here the error I found");
+// try {
+//     console.lag(3)
+
+// } catch (error) {
+//     console.log("error")   
+// }
+// console.log(4)
+// const isLoading = error
+// console.log(5)
+
+
+//      ===============================================================================
+//================================ Browser Storage =============================================
+//      ===============================================================================
+
+const save =()=>{
+    const name1 =String(document.getElementById("vidya").value)
+    const saveInto=localStorage.setItem("name",name1)
+    console.log(saveInto)
+
+    //const saveInto=sessionStorage.setItem("name",name)
+    //console.log(saveInto)
+
+    document.getElementById("vidya").value=" "
+}
+save()
+
+    </script>
+</head>
+
+<body>
+    <input type="text" id="vidya" placeholder="Enter your name">
+    <button onclick="save()">Add to localStorage</button>
+    
+</body>
+</html>
